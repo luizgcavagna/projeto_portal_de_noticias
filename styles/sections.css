@@ -108,6 +108,8 @@ section header {
 
  @media (width <= 990px){
     #weekly {
+        justify-content: center;
+
         & > div {
             grid-template-columns: unset;
             grid-auto-flow: row;
@@ -118,8 +120,6 @@ section header {
         & header > a {
             grid-auto-flow: column
         }
-
-        justify-content: center;
     }
  }
 
@@ -159,9 +159,10 @@ section header {
             }
             
             & h3 {
-                height: 36px;
+                height: 45px;
                 overflow: hidden;        
-                text-overflow: ellipsis; 
+                text-overflow: ellipsis;
+                margin-block: .5rem; 
             }
 
             & p {
