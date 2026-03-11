@@ -44,6 +44,7 @@ img {
     padding-inline: 32px;
     margin-inline: auto;
 }
+
 main {
     margin-block: 40px;
     row-gap: 80px;
@@ -54,6 +55,23 @@ main {
     "weekly weekly"
     "ai aside";
 }
+
+@media (width <= 990px) {
+    .container{
+        padding-inline: 1rem;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "featured"
+        "weekly"
+        "ai"
+        "aside";
+        row-gap: 2rem;
+    }
+}
+
 .content-tag {
     display: inline-block;
     background-color: var(--brand-color-dark);

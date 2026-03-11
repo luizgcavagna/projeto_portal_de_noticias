@@ -8,6 +8,14 @@
 .grid-col-2 {
     grid-template-columns: 1fr 1fr;
 }
+@media (width <= 990px) {
+    .grid-flow-col {
+        grid-auto-flow: row;
+    }
+    .grid-col-2 {
+        grid-template-columns: 1fr;
+    }
+}
 .gap-16 {
     gap: 16px;
 }
