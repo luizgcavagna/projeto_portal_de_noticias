@@ -202,6 +202,10 @@ aside {
         & article.grid-flow-col {
             grid-auto-flow: column;
         }
+
+        & h3 {
+            margin-top: .5rem;
+        }
     }
 
     
